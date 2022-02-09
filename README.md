@@ -4,15 +4,14 @@
 
 - run all 3 commands in root folder one by one.
 <br />
-<br />
-    `
+    
     npm install
-    `
+    
     <br />
-    `
+   
     npm run install-mods
-    `
-        <br />
-    `
+    
+    <br />
+   
     npm run start
-    `
+ 
