@@ -1,0 +1,17 @@
+{
+  "name": "localdrive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-mods": "concurrently \"cd client && npm install\" \"cd backend && npm install\"",
+    "client": "concurrently \"cd client && npm start\"",
+    "backend": "concurrently \"cd backend && npm start\"",
+    "start": "concurrently \"npm run backend\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

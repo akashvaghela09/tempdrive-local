@@ -1,0 +1,30 @@
+.wrapper {
+    /* background-color: hsla(0, 0%, 0%, 0.479); */
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0px;
+        background-color: hsla(0, 0%, 0%, 0.479);
+
+    /* backdrop-filter: blur(1px); */
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 100;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 8px;
+}

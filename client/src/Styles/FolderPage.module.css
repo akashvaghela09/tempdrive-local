@@ -1,0 +1,265 @@
+.wrapper {
+    max-height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+.folderCard {
+    background-color: white;
+    height: 80%;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.metaData {
+    background-color: #636e72;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.folderName {
+    color: white;
+    font-size: 30px;
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    padding: 5px 10px;
+    margin: 7px 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btnIcon, .btnText {
+    margin: 5px;
+    font-size: 22px;
+}
+
+.btnText {
+    font-size: 18px;
+}
+
+.fileListDiv {
+    padding: 10px 15px;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file {
+    display: flex;
+    background: #dcdde1;
+    margin: 5px 0px;
+    width: 80%;
+    align-items: center;
+    padding: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.file:hover {
+    border: 2px solid #b2bec3;   
+}
+
+.fileName {
+    margin: 5px;
+    font-size: 20px;
+    width: 48%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fileType {
+    margin: 5px;
+    font-size: 20px;
+    width: 12%;
+}
+
+.fileSize {
+    margin: 5px;
+    font-size: 20px;
+    width: 15%;
+}
+
+.fileBtnDiv {
+    display: flex;
+    width: 5%;
+    margin: 5px;
+    justify-content: flex-end;
+}
+
+.fileTimestamp {
+    font-size: 20px;
+    margin: 5px;
+    width: 20%;
+}
+
+.deleteIcon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.deleteIcon:hover {
+    background: #f0f0f0;
+}
+
+
+
+/* Custom modal style starts here */
+.modalWrapper, 
+.newFolderModalWrapper, 
+.uploadWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+}
+
+.backdrop, 
+.newFolderModalBackdrop,
+.uploadBackdrop {
+    position: absolute;
+    top: 0px;
+    background-color: hsla(0, 0%, 0%, 0.479);
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content, 
+.newFolderModalContent,
+.uploadContent {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 100;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.closeIcon, 
+.newFolderModalCloseIcon {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #adadad;
+    cursor: pointer;
+}
+
+.closeIcon:hover, 
+.newFolderModalCloseIcon:hover {
+    color: black;
+}
+
+/* custom modal styles ends here */
+
+.newFolderModalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.uploadContent {
+    width: 70vw;
+    padding: 10px;
+    height: fit-content;
+}
+
+.uploadModalText {
+    font-size: 20px;
+}
+
+.progressDivWrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressDiv {
+    width: 100%;
+    background: #0984e3;
+    height: 15px;
+}
+
+.uploadProgressWrapper {
+    width: 100%;
+    margin: 15px 0px;
+    border: 1px solid #e2e2e2;
+    background-color: #dfe6e9;
+}
+
+.uploadPercentage {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.newFolderNameField {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    width: 90%;
+    
+}
+
+.uploadInput {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 110px;
+    padding: 10px 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.uploadInput:hover {
+    opacity: 1;
+}
+
+
+label.uploadLabel input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+.uploadLabel {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.fileIcon {
+    font-size: 30px;
+    margin: 10px;
+}

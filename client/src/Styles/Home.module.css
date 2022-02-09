@@ -1,0 +1,230 @@
+.wrapper {
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: #dfe6e9; */
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: flex;
+    padding: 5px 10px;
+    margin: 7px 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btnIcon, .btnText {
+    margin: 5px;
+    font-size: 22px;
+}
+
+.btnText {
+    
+    font-size: 18px;
+}
+
+.folder {
+    background-color: white;
+    margin: 10px;
+    padding: 8px 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.folder:hover {
+    border: 2px solid #b2bec3; 
+}
+
+.folder_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    cursor: pointer;
+}
+
+.folder_section2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.folderIcon {
+    font-size: 30px;
+}
+
+.folderName {
+    font-size: 20px;   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 95%;
+    margin-left: 10px;
+    
+}
+
+.folderSize, .folderItems, .folderTimestamp{
+    font-size: 18px;   
+    width: 25%;
+    margin: 0px 5px;
+}
+
+.folderTimestamp {
+    width: 32%;
+}
+
+.folderBtns {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editIcon, .deleteIcon {
+    font-size: 30px;   
+    width: 38%;
+    cursor: pointer;
+    margin: 0% 1%;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.editIcon:hover, .deleteIcon:hover {
+    background-color: #dfe6e9;
+}
+
+.editIcon {
+    color: blue;    
+}
+
+/* Custom modal style starts here */
+.modalWrapper, 
+.newFolderModalWrapper, 
+.uploadWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+}
+
+.backdrop, 
+.newFolderModalBackdrop,
+.uploadBackdrop {
+    position: absolute;
+    top: 0px;
+    background-color: hsla(0, 0%, 0%, 0.479);
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content, 
+.newFolderModalContent,
+.uploadContent {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 100;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.closeIcon, 
+.newFolderModalCloseIcon {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #adadad;
+    cursor: pointer;
+}
+
+.closeIcon:hover, 
+.newFolderModalCloseIcon:hover {
+    color: black;
+}
+
+/* custom modal styles ends here */
+
+.newFolderModalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.uploadContent {
+    width: 70vw;
+    padding: 10px;
+    height: fit-content;
+}
+
+.uploadModalText {
+    font-size: 20px;
+}
+
+.progressDivWrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressDiv {
+    width: 100%;
+    background: #0984e3;
+    height: 15px;
+}
+
+.uploadProgressWrapper {
+    width: 100%;
+    margin: 15px 0px;
+    border: 1px solid #e2e2e2;
+    background-color: #dfe6e9;
+}
+
+.uploadPercentage {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.newFolderNameField {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    width: 90%;
+}
+
+
+label.uploadLabel input[type="file"] {
+    position: absolute;
+    top: -1000px;
+    right: 400px;
+    
+}
+
+.uploadLabel {
+    cursor: pointer;
+    display: inline-block;
+}
