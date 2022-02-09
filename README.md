@@ -11,3 +11,7 @@
     npm run install-mods
     npm run start
  
+
+> ### Note
+> - to prevent CORS error **CORS UNBLOCK** extension will be required. 
+> - Download from [here](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino) and enable it.
