@@ -6,11 +6,6 @@
 <br />
     
     npm install
- 
-   
     npm run install-mods
-    
-
-   
     npm run start
  
